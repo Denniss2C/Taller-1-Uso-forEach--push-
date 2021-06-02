@@ -1,0 +1,54 @@
+
+<html>
+    <head>
+        <title>Arreglos con JavaScript</title>
+    </head>
+    <body onload="imprimirArreglos()">
+        <header>
+            <h1>Ejercicios con arrelos en JavaScript</h1>
+            <p>Pregunta: C&oacute;mo se vincula una <b>function</b> de JS con un elemento de documento de HTML?</p>
+            <p>Respuesta: A trav&eacute;s de un atributo tipo <b>evento</b> del elemento.</p>
+            <p>Por ejemplo: El atributo tipo evento <b>onclick</b> de un elemento <b>button</b>.</p>
+        </header>
+        <hr>
+        <h4>Provincias</h4>
+        <p id="arrProvincias"></p>
+        <h5>Funci&oacute;n forEach</h5>
+        <button onclick="imprimirCadaProvincia()">For Each</button>
+        <ul id="ulProvincias">
+        </ul>
+        <h5>Funci&oacute;n Push</h5>
+        <div>
+            <label for="txtProvincias">Nombre:</label>
+            <input type="text" name="txtProvincias" id="txtProvincias">
+        </div>
+        <button onclick="agregrarProvincia()">Push</button>
+        <hr>
+        <h4>Varios tipos de Datos</h4>
+        <p id="arrCombinado"></p>
+        <hr>
+        <h4>N&uacute;meros primos</h4>
+        <p id="arrNumPrimos"></p>
+        <button onclick="cargarNumerosPrimos()">Cargar Elementos</button>
+        <hr>
+        <h4>Serie Fibonacci</h4>
+        <p id="arrSerieFib"></p>
+        <h5>Funci&oacute;n forEach</h5>
+        <button onclick="imprimirFibonacci()">For Each</button>
+        <ul id="ulSerieFib">
+        </ul>
+        <hr>
+        <h4>Figuras Geom&eacute;tricas</h4>
+        <p id="arrFigGeo"></p>
+        <h5>Funci&oacute;n Push</h5>
+        <div>
+            <label for="txtFigura">Nombre:</label>
+            <input type="text" name="txtFigura" id="txtFigura">
+        </div>
+        <button onclick="agregrarFigura()">Push</button>
+        <footer>
+            <script src="../js/script-arrays.js"> </script>
+        </footer>
+
+    </body>
+</html>

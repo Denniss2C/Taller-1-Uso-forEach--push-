@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Arreglos con JavaScript</title>
-    </head>
-    <body onload="imprimirArreglos()">
-        <h1>Ejercicios con arrelos en JavaScript</h1>
-        <hr>
-        <h4>Provincias</h4>
-        <p id="arrProvincias"></p>
-        <h5>Funci&oacute;n forEach</h5>
-        <button onclick="imprimirCadaProvincia()">For Each</button>
-        <ul id="ulProvincias">
-        </ul>
-        <h5>Funci&oacute;n Push</h5>
+    <head><title></title></head>
+    <body onload="cargarPersonas()">
+        <header>
+            <h1>JavaScript: M&eacute;todos y funciones</h1>
+            <hr>
+        </header>
         <div>
-            <label for="txtProvincias">Nombre:</label>
-            <input type="text" name="txtProvincias" id="txtProvincias">
+            <h2>Personas en el arreglo</h2>
+            <p id="arrPersonas"></p>
+            <hr>
+            <h3>M&eacute;todos</h3>
+            <fieldset>
+                <div>
+                    <h4>Agregar o ELiminar elementos del arrelo</h4>
+                    <label for="txtNombre"></label>
+                    <input type="text" name="txtNombre" id="txtNombre" >
+                    <hr>
+                    <button onclick="pushPersonas()" >PUSH</button>
+                    <button onclick="popPersonas()" >POP</button>
+                    <button onclick="ushiftPersonas()" >USHIFT</button>
+                    <button onclick="shiftPersonas()" >SHIFT</button>
+                </div>
+                <hr>
+                <hr>
+                <hr>
+                <h4>Creaci&oacute;n de arrays</h4>
+                <p id="arrNuevoPersonas"></p>
+                <div>
+                    <label for="txtInicio">Indice inicial:</label>
+                    <input type="number" value="1" min="1" max="20" name="txtInicio" id="txtInicio">
+                    <label for="txtFinal">Indice Final:</label>
+                    <input type="number" value="1" min="1" max="20" name="txtFinal" id="txtFinal">
+                </div>
+                <hr>
+                <div>
+                    <button onclick="slicePersonas()" >SLICE</button>
+                    <button onclick="splicePersonas()" >SPLICE</button>
+                    <button onclick="ushiftPersonas()" ></button>
+                    <button onclick="shiftPersonas()" >SHIFT</button>
+                </div>
+
+            </fieldset>
+
         </div>
-        <button onclick="agregrarProvincia()">Push</button>
-        <hr>
-        <h4>Varios tipos de Datos</h4>
-        <p id="arrCombinado"></p>
-        <hr>
-        <h4>N&uacute;meros primos</h4>
-        <p id="arrNumPrimos"></p>
-        <hr>
-        <h4>Serie Fibonacci</h4>
-        <p id="arrSerieFib"></p>
-        <h5>Funci&oacute;n forEach</h5>
-        <button onclick="imprimirFibonacci()">For Each</button>
-        <ul id="ulSerieFib">
-        </ul>
-        <hr>
-        <h4>Figuras Geom&eacute;tricas</h4>
-        <p id="arrFigGeo"></p>
-        <h5>Funci&oacute;n Push</h5>
-        <div>
-            <label for="txtFigura">Nombre:</label>
-            <input type="text" name="txtFigura" id="txtFigura">
-        </div>
-        <button onclick="agregrarFigura()">Push</button>
+
         <footer>
-            <script src="../js/script-arrays.js"> </script>
+            <script src="../js/script-arrays.js"></script>
         </footer>
 
     </body>
