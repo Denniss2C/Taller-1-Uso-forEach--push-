@@ -65,9 +65,8 @@ function cargarNumerosPrimos(){
     numeros_primos[7] = 17;
     numeros_primos[8] = 19;
     numeros_primos[9] = 23;
-    numeros_primos.push(29);
-    document.getElementById('arrNumPrimos').innerText=numeros_primos;
-    document.getElementById('arrNumPrimos').append(" El arreglo tiene "+ numeros_primos.length + " elementos");
+    document.getElementById('arrPrimos').innerText = numeros_primos;
+    document.getElementById('arrPrimos').append(" el arreglo tiene " + numeros_primos.length + " elementos");
 }
 
 

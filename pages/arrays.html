@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head><title></title></head>
-    <body onload="cargarPersonas()">
+    <header>
+        <title>M&eacute;todos y Funciones de JS</title>
+    </header>
+    <body onload="imprimirPersonas()">
+        <!-- Encabezado -->
         <header>
-            <h1>JavaScript: M&eacute;todos y funciones</h1>
+            <h1>Javascript: M&eacute;todos y funciones</h1>
             <hr>
-        </header>
+        </header>        
+        <!-- Contenido -->
         <div>
             <h2>Personas en el arreglo</h2>
             <p id="arrPersonas"></p>
             <hr>
             <h3>M&eacute;todos</h3>
-            <fieldset>
+            <fieldset>                                
+                <h4>Agregar o eliminar elementos del arreglo</h4>                
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" name="txtNombre" id="txtNombre">
+                <hr>
                 <div>
-                    <h4>Agregar o ELiminar elementos del arrelo</h4>
-                    <label for="txtNombre"></label>
-                    <input type="text" name="txtNombre" id="txtNombre" >
-                    <hr>
-                    <button onclick="pushPersonas()" >PUSH</button>
-                    <button onclick="popPersonas()" >POP</button>
-                    <button onclick="ushiftPersonas()" >USHIFT</button>
-                    <button onclick="shiftPersonas()" >SHIFT</button>
-                </div>
-                <hr>
-                <hr>
-                <hr>
+                    <button onclick="pushPersonas()">PUSH</button>
+                    <button onclick="popPersonas()">POP</button>
+                    <button onclick="ushiftPersonas()">USHIFT</button>
+                    <button onclick="shiftPersonas()">SHIFT</button>
+                </div>                
                 <h4>Creaci&oacute;n de arrays</h4>
-                <p id="arrNuevoPersonas"></p>
+                <p id="arrNuevo"></p>                
+                <hr>
                 <div>
-                    <label for="txtInicio">Indice inicial:</label>
-                    <input type="number" value="1" min="1" max="20" name="txtInicio" id="txtInicio">
-                    <label for="txtFinal">Indice Final:</label>
-                    <input type="number" value="1" min="1" max="20" name="txtFinal" id="txtFinal">
+                    <button onclick="slicePersonas()">SLICE</button>                 
+                    <label for="txtInicio">Indice inicial: </label>
+                    <input type="number" value="1" min="1" name="txtInicio" id="txtInicio">
+                    <label for="txtFinal">Indice final: </label>
+                    <input type="number" value="1" min="1" name="txtFinal" id="txtFinal">                       
                 </div>
                 <hr>
                 <div>
-                    <button onclick="slicePersonas()" >SLICE</button>
-                    <button onclick="splicePersonas()" >SPLICE</button>
-                    <button onclick="ushiftPersonas()" ></button>
-                    <button onclick="shiftPersonas()" >SHIFT</button>
+                    <button onclick="splicePersonas()">SPLICE</button>                 
+                    <button onclick="splicePlusPersonas()">SPLICE +</button>                                     
+                    <label for="txtInicioSplice">Indice inicial: </label>
+                    <input type="number" value="1" min="1" name="txtInicioSplice" id="txtInicioSplice">
+                    <label for="txtNumSplice"># de elementos: </label>
+                    <input type="number" value="1" min="1" name="txtNumSplice" id="txtNumSplice">                       
+                </div>
+                <hr>
+                <div>
+                    <button onclick="joinPersonas()">JOIN</button>                                     
+                    <button onclick="arrayDesde()">ARRAY FROM</button>                                     
+                    <label for="txtSep">Cadena: </label>
+                    <input type="text" name="txtSep" id="txtSep">                    
+                </div>
+                <h4>B&uacute;squeda y comprobaci&oacute;n</h4>
+                <p id="arrResultado"></p>   
+                <label for="txtCriterioBusqueda">Buscar: </label>             
+                <input type="text" name="txtCriterioBusqueda" id="txtCriterioBusqueda">
+                <hr>
+                <div>
+                    <button onclick="includesPersonas()">INCLUDES</button>
+                    <button onclick="indexOfPersonas()">INDEX OF</button>
+                    <button onclick="lastIndexOfPersonas()">LAST INDEX OF</button>
+                    <button onclick="sortPersonas()">SORT</button>
+                    <button onclick="reversePersonas()">REVERSE</button>
                 </div>
 
             </fieldset>
-
         </div>
-
+        <!-- Pie de p&aacute;gina -->
         <footer>
             <script src="../js/script-arrays.js"></script>
         </footer>
-
     </body>
 </html>
